@@ -1,19 +1,20 @@
 import * as React from 'react';
 import Slide from './Slide';
 import Center from './Center';
+import { Title, Paragraph } from '../UI';
 
 function Deck(): JSX.Element {
   const [currentSlide, setCurrentSlide] = React.useState(0);
   const [slides] = React.useState([
     <Center>
-      <h1>Getting started with react</h1>
+      <Title>Getting started with react</Title>
     </Center>,
     <Center>
-      <h1>For this session:</h1>
+      <Title>For this session:</Title>
       <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
+        <Paragraph>1</Paragraph>
+        <Paragraph>2</Paragraph>
+        <Paragraph>3</Paragraph>
       </ul>
     </Center>,
     <Center>
